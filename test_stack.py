@@ -12,3 +12,7 @@ def test_stack_is_empty():
 def test_push_one_item():
     st = Stack()
     st.push(2)
+    assert not st.is_empty()
+    assert st.top() == 2
+    assert repr(st) == "Stack()"
+    assert str(st) == "Stack(2)"
